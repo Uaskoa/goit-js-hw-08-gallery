@@ -31,13 +31,6 @@ function createList() {
 
 createList();
 
-// ulRef.addEventListener("click", (event) => {
-//   if (event.target.nodeName !== "IMG") {
-//    return;
-//   }
-//   console.log(event.target.dataset.source);
-// });
-
 ulRef.addEventListener("click", openModal);
 buttonRef.addEventListener("click", closeModal);
 overlayRef.addEventListener("click", closeModal);
@@ -89,3 +82,10 @@ function changeImgByLeftArrow(index) {
     currentIndex -= 1;
   }
 }
+
+// ulRef.addEventListener("click", (event) => {
+//   if (event.target.nodeName !== "IMG") {
+//    return;
+//   }
+//   console.log(event.target.dataset.source);
+// });
